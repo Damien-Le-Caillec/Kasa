@@ -1,0 +1,12 @@
+#root {
+  max-width: 1440px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 45px;
+}
