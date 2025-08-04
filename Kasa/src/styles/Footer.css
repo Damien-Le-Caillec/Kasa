@@ -1,3 +1,11 @@
 .footer {
     background-color: #000000;
 }
+
+img.footer-logo {
+    margin-top: 50px;
+}
+
+h3 {
+    color: white;
+}

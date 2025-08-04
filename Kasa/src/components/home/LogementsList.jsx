@@ -8,6 +8,7 @@ function LogementsList() {
             {logements.map((logement, id) => (
                 <Card
                     key={id}
+                    id={logement.id}
                     title={logement.title}
                     cover={logement.cover}
                 />
