@@ -3,47 +3,40 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import '../styles/App.css';
 import Banner from './Banner';
 import Footer from './Footer'
-import Tagline from './home/Tagline';
 import LogementsList from './home/LogementsList';
 import Error404 from './404/Error404'
+import LogementPage from './logements/LogementPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: 
-      <div className="app">
-        <Banner/>
-        <Tagline/>
-        <LogementsList/>
+      <>
+        <Banner />,
+        <LogementsList/>,
         <Footer/>
-      </div>,
+      </>   
   },
 
   {
     path: '/logement/:id',
     element: 
-      <div className='app'>
-        <Banner/>
-
-        <Footer/>
-      </div>,
+      <LogementPage/>
+        
   },
 
   { 
     path: '/404',
-    element: <div>
-      <Banner/>
+    element:
+      
       <Error404/>
-      <Footer/>
-    </div>,
   },
 
   {
     path: 'about',
-    element: <div>
-      <Banner/>
-      <Footer/>
-    </div>,
+    element:
+    
+      <div>About</div>
   }
 
 ])
@@ -51,8 +44,10 @@ const router = createBrowserRouter([
 function App() {
 
   return (
-    <RouterProvider router={router}/>
-  )
+    <div className="app">
+      <RouterProvider router={router}/>,
+    </div>
+  );
 }
 
 export default App
