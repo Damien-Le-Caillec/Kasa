@@ -6,14 +6,15 @@ import Footer from './Footer'
 import LogementsList from './home/LogementsList';
 import Error404 from './404/Error404'
 import LogementPage from './logements/LogementPage';
+import AboutPage from './about/AboutPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: 
       <>
-        <Banner />,
-        <LogementsList/>,
+        <Banner />
+        <LogementsList/>
         <Footer/>
       </>   
   },
@@ -21,22 +22,33 @@ const router = createBrowserRouter([
   {
     path: '/logement/:id',
     element: 
-      <LogementPage/>
+      <>
+        <Banner />
+        <LogementPage/>
+        <Footer/>
+      </>
+     
         
   },
 
   { 
     path: '/404',
     element:
-      
+      <>
+      <Banner />
       <Error404/>
+      <Footer/>
+      </>
   },
 
   {
     path: 'about',
     element:
-    
-      <div>About</div>
+      <>
+        <Banner />
+        <AboutPage/>
+        <Footer/>
+      </>
   }
 
 ])

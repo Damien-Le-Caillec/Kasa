@@ -6,8 +6,7 @@ import { Navigate, useParams } from 'react-router-dom';
 import LogementTags from './Logement-tags';
 import LogementHost from './Logement-host';
 import LogementRating from './Logement-rating';
-import LogementDescription from './Logement-description';
-import LogementEquipements from './Logement-equipements';
+import Dropdown from '../Dropdown';
 
 
 function LogementPage() {
@@ -33,8 +32,17 @@ function LogementPage() {
                     </div>
                 </div>
                     <div className='logement-description-equipements'>
-                        <LogementDescription title="Description" content={logement.description} />
-                        <LogementEquipements equipments={logement.equipments} />
+                        <Dropdown title="Description">
+                         <p>{logement.description}</p>
+                        </Dropdown>
+
+                        <Dropdown title="Équipements">
+                            <ul>
+                                {logement.equipments.map((equipment, index) => (
+                                    <li key={index}>{equipment}</li>
+                                ))}
+                            </ul>
+                        </Dropdown>
                     </div>
             </div>
         </div>
