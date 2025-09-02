@@ -1,12 +1,13 @@
-import '../../styles/logements/LogementPage.css';
-import logements from '../../datas/logements.json';
-import Carousel from './Carousel';
-import LogementTitleLocation from './Logement-title-location';
+import '../styles/logements/LogementPage.css';
+import '../styles/common/Dropdown.css';
+import logements from '../datas/logements.json';
+import Carousel from '../components/logements/Carousel';
+import LogementTitleLocation from '../components/logements/Logement-title-location';
 import { Navigate, useParams } from 'react-router-dom';
-import LogementTags from './Logement-tags';
-import LogementHost from './Logement-host';
-import LogementRating from './Logement-rating';
-import Dropdown from '../Dropdown';
+import LogementTags from '../components/logements/Logement-tags';
+import LogementHost from '../components/logements/Logement-host';
+import LogementRating from '../components/logements/Logement-rating';
+import Dropdown from '../components/common/Dropdown';
 
 
 function LogementPage() {

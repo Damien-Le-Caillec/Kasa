@@ -1,12 +1,12 @@
-import Card from './Card';
-import logements from '../../datas/logements.json';
-import "../../styles/home/LogementsList.css";
-import Tagline from './Tagline';
+import "../styles/home/LogementsList.css";
+import Card from '../components/home/Card';
+import logements from '../datas/logements.json';
+import Tagline from '../components/common/Tagline';
 
 function LogementsList() {
     return (
         <div className='logements-list'>
-            <Tagline/>
+            <Tagline variant="home" showTitle={true}/>
             <div className='card-container'>
                 {logements.map((logement, id) => (
                     <Card

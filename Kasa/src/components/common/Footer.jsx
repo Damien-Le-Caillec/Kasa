@@ -1,5 +1,5 @@
-import logobw from '../assets/logobw.png'
-import "../styles/Footer.css"
+import logobw from '../../assets/logobw.png';
+import "../../styles/common/Footer.css";
 
 
 function Footer() {
@@ -9,7 +9,7 @@ function Footer() {
             <img src={logobw} alt="Kasa Logo" className="footer-logo" />
             <h3>© 2020 Kasa. All rights reserved</h3>
         </div>
-    );
+    )
 }
 
 export default Footer;

@@ -6,6 +6,7 @@ function Card ({ title, cover, id }) {
         
             <Link to={`/logement/${id}`} className="card">
                 <img src={cover} alt={`Image de ${title}`} className="card-image" />
+                <div className="card-overlay"></div>
                 <h2>{title}</h2>
             </Link>
         
