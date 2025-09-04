@@ -1,4 +1,4 @@
-import '../../styles/logements/Carousel.css';
+import '../../styles/logements/Carousel.sass';
 import { useState } from 'react';
 
 function Carousel({ pictures }) {

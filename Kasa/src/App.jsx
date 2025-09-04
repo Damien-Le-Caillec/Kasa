@@ -1,6 +1,6 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
-import '../src/styles/App.css';
+import '../src/styles/App.sass';
 import Banner from './components/common/Banner';
 import Footer from './components/common/Footer'
 import LogementsList from './pages/LogementsList';

@@ -1,4 +1,4 @@
-import "../styles/home/LogementsList.css";
+import "../styles/home/LogementsList.sass";
 import Card from '../components/home/Card';
 import logements from '../datas/logements.json';
 import Tagline from '../components/common/Tagline';

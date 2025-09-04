@@ -1,5 +1,5 @@
-import '../styles/logements/LogementPage.css';
-import '../styles/common/Dropdown.css';
+import '../styles/logements/LogementPage.sass';
+import '../styles/common/Dropdown.sass';
 import logements from '../datas/logements.json';
 import Carousel from '../components/logements/Carousel';
 import LogementTitleLocation from '../components/logements/Logement-title-location';

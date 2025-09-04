@@ -1,5 +1,5 @@
 import logobw from '../../assets/logobw.png';
-import "../../styles/common/Footer.css";
+import "../../styles/common/Footer.sass";
 
 
 function Footer() {

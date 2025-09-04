@@ -1,9 +1,0 @@
-.card-container {
-    margin: 0px 100px;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #f6f6f6;
-    gap: 30px ;
-    border-radius: 25px
-}

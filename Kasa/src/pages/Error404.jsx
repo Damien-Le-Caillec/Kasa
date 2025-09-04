@@ -1,4 +1,4 @@
-import '../styles/404/Error404.css';
+import '../styles/404/Error404.sass';
 import {Link} from 'react-router-dom';
 
 

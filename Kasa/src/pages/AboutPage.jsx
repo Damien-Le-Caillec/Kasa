@@ -1,5 +1,5 @@
-import '../styles/about/AboutPage.css';
-import '../styles/about/Tagline-about.css';
+import '../styles/about/AboutPage.sass';
+import '../styles/about/Tagline-about.sass';
 import Dropdown from "../components/common/Dropdown.jsx";
 import Tagline from "../components/common/Tagline.jsx";
 

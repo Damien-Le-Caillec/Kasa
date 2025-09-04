@@ -1,4 +1,4 @@
-import "../../styles/home/Tagline-home.css";
+import "../../styles/home/Tagline-home.sass";
 
 
 function Tagline({ showTitle = true, variant = "home" }) {

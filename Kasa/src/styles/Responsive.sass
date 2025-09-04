@@ -1,0 +1,185 @@
+$mobile-margin: 20px
+$mobile-padding: 20px
+$mobile-gap: 20px
+$mobile-font-small: 12px
+$mobile-font-medium: 16px
+$mobile-font-large: 20px
+
+
+@media screen and (max-width: 426px)
+  // Common
+  .app
+    padding-top: $mobile-padding
+    gap: $mobile-gap
+
+  .banner
+    margin: 0 $mobile-margin
+
+    &-logo
+      width: 145px
+      height: 47px
+
+    &-nav-list
+      gap: 26px
+
+    &-nav-item
+      a
+        font-size: $mobile-font-small
+
+  .tagline
+    background-size: cover
+    background-position: center
+    text-align: left
+    position: relative
+    border-radius: 10px
+    margin: 0 $mobile-margin
+    padding: $mobile-padding
+    margin-bottom: $mobile-padding
+    height: 100px
+
+    &::before
+      content: ""
+      position: absolute
+      inset: 0
+      background: rgba(0, 0, 0, 0.60)
+      z-index: 0
+      border-radius: 10px
+      border: #000000 1px solid
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+
+  .tagline--home
+    h1
+      position: relative
+      z-index: 1
+      color: #ffffff
+      font-size: $mobile-font-large
+      font-weight: 700
+
+  .footer
+    text-align: center
+    padding: 0
+
+    img.footer-logo
+      margin-top: 50px
+
+    h3
+      font-size: $mobile-font-medium
+
+  .dropdown
+    width: 100%
+
+    summary
+      font-size: 13px
+      padding: 5px 10px
+      border-radius: 5px
+      flex: 1
+
+    &-content
+      font-size: 12px
+
+  // Home
+  .card-container
+    margin: 0 $mobile-margin
+    grid-template-columns: repeat(1, 1fr)
+    background-color: #ffffff
+    padding: 0
+
+  // Logements
+  .carousel
+    margin: 0 $mobile-margin
+    height: 60vh
+    overflow: hidden
+
+    &-image
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+    &-counter
+      display: none
+
+    &-arrow
+      font-size: 20px
+
+  .logement-details
+    margin: 0 $mobile-margin
+    flex-direction: column
+    gap: $mobile-gap
+
+  .logement-header
+    justify-content: space-between
+    align-items: flex-start
+    flex-direction: column
+    gap: 0
+
+  .logement-info
+    max-width: 90%
+
+  .logement-title-location
+    max-width: 100%
+
+  .logement-title
+    font-size: 18px
+    margin: 10px 0
+
+  .logement-location
+    font-size: 14px
+    margin: 0 0 10px 0
+
+  .logement-tag
+    font-size: 10px
+    font-weight: 700
+    padding: 5px 10px
+    border-radius: 10px
+
+  .logement-host-rating
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex: 1
+    margin-top: 10px
+    width: 100%
+
+  .logement-host
+    order: 2
+    margin-bottom: 16px
+    align-content: center
+
+  .host-name
+    font-size: $mobile-font-small
+    margin-right: 8px
+    flex-wrap: wrap
+    justify-content: flex-end
+    max-width: 90%
+
+  .host-picture
+    width: 32px
+    height: 32px
+    border-radius: 50%
+
+  .logement-rating
+    display: flex
+    gap: 4px
+
+  .star
+    font-size: 18px
+
+  .logement-description-equipements
+    flex-direction: column
+    gap: 10px
+    width: 100%
+    align-items: center
+
+  // About
+  .dropdown-aboutpage
+    margin: 0 $mobile-margin
+
+  // 404 Page
+  .error-404__title
+    font-size: 96px
+    margin-bottom: 40px
+    margin-top: 40px
+
+  .error-404__message
+    font-size: 18px
+    text-align: center

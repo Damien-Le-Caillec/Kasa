@@ -1,5 +1,5 @@
 import logo from '../../assets/logo.png'
-import "../../styles/common/Banner.css"
+import "../../styles/common/Banner.sass"
 
 
 function Banner() {
