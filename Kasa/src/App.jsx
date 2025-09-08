@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="app">
       <Banner />
-      <RouterProvider router={router}/>
+      <main><RouterProvider router={router}/></main>
       <Footer/>
     </div>
   );
