@@ -1,5 +1,5 @@
 import '../../styles/logements/Carousel.sass';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Carousel({ pictures }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,6 +11,11 @@ function Carousel({ pictures }) {
     const prevSlide = () => {
         setCurrentIndex((currentIndex - 1 + pictures.length) % pictures.length);
     };
+
+    useEffect(() => {
+        const currentImage = pictures[currentIndex];
+        console.log('Image affichée :', currentImage);
+    }, [pictures[currentIndex]]);
 
     return (
         <div className='carousel'>
